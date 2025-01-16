@@ -7,9 +7,9 @@ from sklearn.datasets import load_diabetes
 
 st.title("This app is to predict the glucose level in the blood of a diabetic patient")
 
-model_lr=pickle.load(open(model_lr.pkl','rb'))
-model_en=pickle.load(open(model_en.pkl','rb'))
-model_ridge=pickle.load(open(model_ridge.pkl','rb'))
+model_lr=pickle.load(open('model_lr.pkl','rb'))
+model_en=pickle.load(open('model_en.pkl','rb'))
+model_ridge=pickle.load(open('model_ridge.pkl','rb'))
 
 #load the dataset
 diab=load_diabetes()
