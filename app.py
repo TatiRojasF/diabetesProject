@@ -1,15 +1,15 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle as pk
+import pickle 
 from sklearn.datasets import load_diabetes
 
 
 st.title("This app is to predict the glucose level in the blood of a diabetic patient")
 
-model_lr=pk.load(open('Models\model_lr.pkl','rb'))
-model_en=pk.load(open('Models\model_en.pkl','rb'))
-model_ridge=pk.load(open('Models\model_ridge.pkl','rb'))
+model_lr=pickle.load(open('Models\model_lr.pkl','rb'))
+model_en=pickle.load(open('Models\model_en.pkl','rb'))
+model_ridge=pickle.load(open('Models\model_ridge.pkl','rb'))
 
 #load the dataset
 diab=load_diabetes()
